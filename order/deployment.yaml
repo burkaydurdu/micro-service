@@ -28,6 +28,9 @@ spec:
       containers:
       - name: order
         image: order
+        env:
+          - name: TRACE_COLLECTOR_ENDPOINT
+            value: "http://hz-zipkin:9411/api/v2/spans"
       - name: order-sidecar
         image: hazelcast/turbine-sidecar
         env:
