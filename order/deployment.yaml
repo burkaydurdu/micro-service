@@ -33,7 +33,7 @@ spec:
         env:
           - name: CLUSTER_ADDRESS
             value: "hz-hazelcast:5701"
-          - name: APP_PORT
+          - name: APP_HTTP_PORT
             value: "3001"
           - name: "TURBINE_POD_IP"
             valueFrom:
